@@ -1,0 +1,494 @@
+Archive member included because of file (symbol)
+
+d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+                              Schedular.o (__udivmodsi4)
+d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+                              d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+                              MCAL/DIO/DIO_PROGRAM.o (__do_copy_data)
+d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                              MCAL/DIO/DIO_PROGRAM.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+Task_arr            0x32              Schedular.o
+Number_of_Tasks     0x1               Schedular.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+LOAD MCAL/DIO/DIO_PROGRAM.o
+LOAD MCAL/GIE/GIE_PROGRAM.o
+LOAD MCAL/PORT/PORT_CONFIG.o
+LOAD MCAL/PORT/PORT_PROGRAM.o
+LOAD MCAL/TMR0/TMR0_PROGRAM.o
+LOAD Schedular.o
+LOAD Schedular_Without_FirstDelay.o
+START GROUP
+LOAD d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5\libm.a
+END GROUP
+LOAD d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a
+LOAD d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5\libc.a
+LOAD d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x7bc
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092      0x2bc MCAL/DIO/DIO_PROGRAM.o
+                0x00000092                Dio_WriteChannel
+                0x000001a4                Dio_ReadChannel
+                0x00000220                Dio_ReadPort
+                0x00000242                Dio_WritePort
+                0x00000264                Dio_FlipChannel
+ .text          0x0000034e       0x10 MCAL/GIE/GIE_PROGRAM.o
+                0x0000034e                GI_vEnable
+                0x00000356                GI_vDisable
+ .text          0x0000035e        0x0 MCAL/PORT/PORT_CONFIG.o
+ .text          0x0000035e      0x112 MCAL/PORT/PORT_PROGRAM.o
+                0x0000035e                Port_Init
+ .text          0x00000470      0x14a MCAL/TMR0/TMR0_PROGRAM.o
+                0x00000470                TMR0_vInit
+                0x00000484                TMR0_vStart
+                0x00000498                TMR0_vStop
+                0x000004a0                TMR0_vSetDutyCycle_PWM
+                0x000004a2                TMR0_vSetCompareMatchValue
+                0x000004a6                TMR0_vSetDelay_ms_UsingCTC
+                0x000004b4                TMR0_vSetCallBack_OVF
+                0x000004be                TMR0_vSetCallBack_COMP
+                0x000004c8                __vector_11
+                0x00000540                __vector_10
+ .text          0x000005ba      0x174 Schedular.o
+                0x000005ba                Create_Task
+                0x000005f6                Task_Delete
+                0x0000064e                Schedular
+                0x0000070a                TMR0_ISR
+                0x00000710                Start_System
+ .text          0x0000072e       0x46 Schedular_Without_FirstDelay.o
+                0x0000072e                Task3
+                0x00000736                Task2
+                0x0000073e                Task1
+                0x00000746                main
+ .text          0x00000774        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000774        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000774        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000774        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000774                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000774       0x44 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000774                __udivmodsi4
+ .text.libgcc   0x000007b8        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000007b8        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000007b8        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                0x000007b8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000007b8        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+                0x000007b8                _exit
+                0x000007b8                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000007b8        0x4 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000007bc                _etext = .
+
+.data           0x00800060        0xc load address 0x000007bc
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 MCAL/DIO/DIO_PROGRAM.o
+ .data          0x00800060        0x0 MCAL/GIE/GIE_PROGRAM.o
+ .data          0x00800060        0xc MCAL/PORT/PORT_CONFIG.o
+                0x00800060                Port_cngs
+ .data          0x0080006c        0x0 MCAL/PORT/PORT_PROGRAM.o
+ .data          0x0080006c        0x0 MCAL/TMR0/TMR0_PROGRAM.o
+ .data          0x0080006c        0x0 Schedular.o
+ .data          0x0080006c        0x0 Schedular_Without_FirstDelay.o
+ .data          0x0080006c        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0080006c        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .data          0x0080006c        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080006c        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080006c                . = ALIGN (0x2)
+                0x0080006c                _edata = .
+                0x0080006c                PROVIDE (__data_end, .)
+
+.bss            0x0080006c       0x41
+                0x0080006c                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080006c        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080006c        0x0 MCAL/DIO/DIO_PROGRAM.o
+ .bss           0x0080006c        0x0 MCAL/GIE/GIE_PROGRAM.o
+ .bss           0x0080006c        0x0 MCAL/PORT/PORT_CONFIG.o
+ .bss           0x0080006c        0x0 MCAL/PORT/PORT_PROGRAM.o
+ .bss           0x0080006c        0xa MCAL/TMR0/TMR0_PROGRAM.o
+ .bss           0x00800076        0x4 Schedular.o
+ .bss           0x0080007a        0x0 Schedular_Without_FirstDelay.o
+ .bss           0x0080007a        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0080007a        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .bss           0x0080007a        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080007a        0x0 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080007a       0x33 Schedular.o
+                0x0080007a                Task_arr
+                0x008000ac                Number_of_Tasks
+                0x008000ad                PROVIDE (__bss_end, .)
+                0x000007bc                __data_load_start = LOADADDR (.data)
+                0x000007c8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000ad        0x0
+                0x008000ad                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000ad                PROVIDE (__noinit_end, .)
+                0x008000ad                _end = .
+                0x008000ad                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+
+.stabstr        0x00000000       0x85
+ *(.stabstr)
+ .stabstr       0x00000000       0x85 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x140
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 MCAL/DIO/DIO_PROGRAM.o
+ .debug_aranges
+                0x00000020       0x20 MCAL/GIE/GIE_PROGRAM.o
+ .debug_aranges
+                0x00000040       0x20 MCAL/PORT/PORT_PROGRAM.o
+ .debug_aranges
+                0x00000060       0x20 MCAL/TMR0/TMR0_PROGRAM.o
+ .debug_aranges
+                0x00000080       0x20 Schedular.o
+ .debug_aranges
+                0x000000a0       0x20 Schedular_Without_FirstDelay.o
+ .debug_aranges
+                0x000000c0       0x20 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x000000e0       0x20 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000100       0x20 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000120       0x20 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0xfdd
+ *(.debug_info)
+ .debug_info    0x00000000      0x2b9 MCAL/DIO/DIO_PROGRAM.o
+ .debug_info    0x000002b9       0xa0 MCAL/GIE/GIE_PROGRAM.o
+ .debug_info    0x00000359      0x163 MCAL/PORT/PORT_CONFIG.o
+ .debug_info    0x000004bc      0x19c MCAL/PORT/PORT_PROGRAM.o
+ .debug_info    0x00000658      0x228 MCAL/TMR0/TMR0_PROGRAM.o
+ .debug_info    0x00000880      0x24e Schedular.o
+ .debug_info    0x00000ace      0x19b Schedular_Without_FirstDelay.o
+ .debug_info    0x00000c69       0xdd d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x00000d46       0xdd d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_info    0x00000e23       0xdd d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x00000f00       0xdd d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x503
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xd0 MCAL/DIO/DIO_PROGRAM.o
+ .debug_abbrev  0x000000d0       0x41 MCAL/GIE/GIE_PROGRAM.o
+ .debug_abbrev  0x00000111       0x90 MCAL/PORT/PORT_CONFIG.o
+ .debug_abbrev  0x000001a1       0xc3 MCAL/PORT/PORT_PROGRAM.o
+ .debug_abbrev  0x00000264       0xb3 MCAL/TMR0/TMR0_PROGRAM.o
+ .debug_abbrev  0x00000317      0x130 Schedular.o
+ .debug_abbrev  0x00000447       0x6c Schedular_Without_FirstDelay.o
+ .debug_abbrev  0x000004b3       0x14 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x000004c7       0x14 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x000004db       0x14 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x000004ef       0x14 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+
+.debug_line     0x00000000      0x68e
+ *(.debug_line)
+ .debug_line    0x00000000       0xc3 MCAL/DIO/DIO_PROGRAM.o
+ .debug_line    0x000000c3       0x71 MCAL/GIE/GIE_PROGRAM.o
+ .debug_line    0x00000134       0x7c MCAL/PORT/PORT_CONFIG.o
+ .debug_line    0x000001b0       0xd0 MCAL/PORT/PORT_PROGRAM.o
+ .debug_line    0x00000280       0xa7 MCAL/TMR0/TMR0_PROGRAM.o
+ .debug_line    0x00000327       0x97 Schedular.o
+ .debug_line    0x000003be       0x81 Schedular_Without_FirstDelay.o
+ .debug_line    0x0000043f       0xa8 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x000004e7       0x88 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_line    0x0000056f       0x91 d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x00000600       0x8e d:/programs/atmel studio/atmel/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+
+.debug_frame    0x00000000      0x2e0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x64 MCAL/DIO/DIO_PROGRAM.o
+ .debug_frame   0x00000064       0x34 MCAL/GIE/GIE_PROGRAM.o
+ .debug_frame   0x00000098       0x30 MCAL/PORT/PORT_PROGRAM.o
+ .debug_frame   0x000000c8      0x144 MCAL/TMR0/TMR0_PROGRAM.o
+ .debug_frame   0x0000020c       0x80 Schedular.o
+ .debug_frame   0x0000028c       0x54 Schedular_Without_FirstDelay.o
+
+.debug_str      0x00000000      0x5db
+ *(.debug_str)
+ .debug_str     0x00000000      0x255 MCAL/DIO/DIO_PROGRAM.o
+                                0x27c (size before relaxing)
+ .debug_str     0x00000255       0x31 MCAL/GIE/GIE_PROGRAM.o
+                                0x11a (size before relaxing)
+ .debug_str     0x00000286       0xb9 MCAL/PORT/PORT_CONFIG.o
+                                0x1e9 (size before relaxing)
+ .debug_str     0x0000033f       0x26 MCAL/PORT/PORT_PROGRAM.o
+                                0x1f4 (size before relaxing)
+ .debug_str     0x00000365      0x168 MCAL/TMR0/TMR0_PROGRAM.o
+                                0x251 (size before relaxing)
+ .debug_str     0x000004cd       0xd3 Schedular.o
+                                0x1c9 (size before relaxing)
+ .debug_str     0x000005a0       0x3b Schedular_Without_FirstDelay.o
+                                0x1d1 (size before relaxing)
+
+.debug_loc      0x00000000      0x526
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x268 MCAL/DIO/DIO_PROGRAM.o
+ .debug_loc     0x00000268       0x43 MCAL/PORT/PORT_PROGRAM.o
+ .debug_loc     0x000002ab      0x196 MCAL/TMR0/TMR0_PROGRAM.o
+ .debug_loc     0x00000441       0xe5 Schedular.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Schedular_Without_FirstDelay.elf elf32-avr)
+LOAD linker stubs
