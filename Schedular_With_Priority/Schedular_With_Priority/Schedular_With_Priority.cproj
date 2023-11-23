@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8</ToolchainName>
+    <ProjectGuid>{b54b23f9-b01e-48e9-b92e-c31104f9c67d}</ProjectGuid>
+    <avrdevice>ATmega32</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Schedular_With_Priority</AssemblyName>
+    <Name>Schedular_With_Priority</Name>
+    <RootNamespace>Schedular_With_Priority</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue />
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfVersion>3.5.0</AsfVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>m</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>m</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MCAL\DIO\DIO_INTERFACE.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_PROGRAM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_REGISTER.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_TYPES.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\GIE\GIE_INTERFACE.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\GIE\GIE_PROGRAM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\GIE\GIE_REGISTER.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PORT\PORT_CONFIG.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PORT\PORT_CONFIG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PORT\PORT_INTERFACE.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PORT\PORT_PROGRAM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PORT\PORT_REGISTER.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PORT\PORT_TYPES.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TMR0\TMR0_CONFIG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TMR0\TMR0_INTERFACE.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TMR0\TMR0_PRIVATE.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TMR0\TMR0_PROGRAM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TMR0\TMR0_REGISTER.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Schedular.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Schedular.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Schedular_With_Priority.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UTIL\BIT_MATH.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UTIL\STD_TYPES.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MCAL" />
+    <Folder Include="MCAL\DIO" />
+    <Folder Include="MCAL\GIE" />
+    <Folder Include="MCAL\TMR0" />
+    <Folder Include="MCAL\PORT" />
+    <Folder Include="UTIL" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
